@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+            
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;     
+            max-width:800px ; /* maximo comprimento */ /* usamos esse codigo para deixa o texto,video,imagem,links etc.... adapetavel a qualquer dispositivo */
+            min-width:320px ; /* minimo comprimento */ /* usamos esse codigo para deixa o texto,video,imagem,links etc.... adapetavel a qualquer dispositivo */
+            
+        }
+        img{
+            width: 100%; /* comprimento da imagem */ /* usamos esse codigo para deixa o texto,video,imagem,links , etc...... adapetavel a qualquer dispositivo */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>testando reponsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui hic id veritatis alias culpa atque ratione velit quam, cum minima ex nisi, earum eaque fugit officia sed, nihil tempore necessitatibus!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque laudantium ullam ratione dolores, esse tenetur odio? Hic, omnis. Obcaecati, eum! Magnam animi in eveniet sequi nesciunt non porro illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perferendis voluptates voluptatibus soluta dolor eligendi incidunt aspernatur provident sit, vero eum maxime, earum quis omnis quod impedit placeat libero minima.</p>
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg"> <!-- quando o comprimento for 600 ele ira trocar a imagem normal da irina pela imagem pequena dela. srcset fica o nome da imagem-->
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint animi sunt dicta rerum illum voluptates dolor quod praesentium consequatur. Quia perferendis eaque, praesentium vel tenetur natus dicta saepe modi adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, unde quia odit ratione inventore dolore ipsum ex distinctio asperiores quibusdam, sunt placeat repellendus natus magni? Quod unde iure ad illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ad nisi atque. Hic, molestias odio? Natus autem beatae nisi vitae, obcaecati dignissimos libero. Inventore quisquam iusto adipisci pariatur quod harum?</p>
+        
+    </main>
+    
+</body>
+</html>
