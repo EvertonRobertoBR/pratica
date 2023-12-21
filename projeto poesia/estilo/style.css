@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap'); /* pegamos o codigo do google fonts, nos permite usar a fonte 2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /* pegamos o codigo do google fonts, nos permite usar a fonte 3 */
+
+:root{ /* nos permite criar variaveis */
+   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+   --fonte2:'Passion One', sans-serif;
+   --fonte3:'Sriracha', cursive;
+}
+
  *{             /* (*) esse simbolo significa que as configurações servem para todos os elementos gerais */
     margin: 0px;
     padding: 0px;
@@ -8,16 +19,20 @@
  html,body{ /* as alterações servem para o html eo body ao mesmo tempo */
     min-height: 100vh ; /* o tamanho do texto vai ser de acordo com o tamanho da view port(altura) */
     background-color: darkgray;
+    font-family: var(--fonte1);
  }
  header{
     background-color: black;
     color: white;
     text-align: center;
+    
  }
  header h1 {
     padding-top: 50px;
     /* text-transform: uppercase; deixa a letra maiuscula */
     font-variant: small-caps; /* deixa a letra maiuscula tambem */
+    font-family: var(--fonte2);
+    font-size: 4vw ;/*  vw significa largura da tela */ /* para fazer com que o texto que esta dentro de h1 aumente ou diminua de temanho em relação ao tamanho da tela usamos o vw */
  }
  header p {
     padding-bottom: 50px ;
@@ -37,6 +52,8 @@
     padding-bottom: 10vh ;
     line-height: 2em; /* vai criar um espaço vazio entre cada frase */
     padding-left:30px ; /* vai desgrudar o texto do lado esquerdo */
+    font-family: var(--fonte3);
+    font-size: 3.5vw ; /*  vw significa largura da tela */ /* para fazer com que o texto que esta dentro de h1 aumente ou diminua de temanho em relação ao tamanho da tela usamos o vw */
  }
  section.normal{
     background-color: white;
@@ -50,7 +67,8 @@
  }
  section.imagem>p{
     background-color: rgba(0, 0, 0, 0.267);
-    width: 400px;
+    display: inline-block; /* o fundo preto onde esta os paragrafos vai ficar alinhado com os paragrafos criando uma caixa */
+    padding: 20px;
 
  }
  footer{
