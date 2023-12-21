@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundo de imagem</title>
+    <style>
+        div.quadrado{
+            border: 2px solid black; /* use os 3 primeiros codigos em conjunto com as 3 divs que criamos, para criar quadrados individuais */
+            width: 300px;
+            height: 300px;
+            display: inline-block; /* vai fazer com que os 3 quadrados fiquem um do lado do outro */
+            border-radius: 10px;
+            background-color: lightgray;
+
+        }
+
+        body{
+            background-image: url('pattern004.png'); /* usamos esse codigo para inserir imagens como plano de fundo */
+        }
+        div#q1{
+            background-color: skyblue;
+
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom,rgb(3, 34, 3),rgb(25, 209, 25) );
+
+        }
+        div#q3{
+            background-image: url('pattern003.png'); /* usamos esse codigo para inserir imagens como plano de fundo */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
