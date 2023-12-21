@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas </title>
+    <style>
+        #conteiner{
+            background-image: url('target001.png');
+            background-size: 100% 100%; /* largura e altura */
+            position: relative; /* esse comando deve ser usado em conjunto com o comando position: absolute */
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+
+        }
+
+        #conteudo{
+            background-image: url('target001.png');
+            background-size: 100% 100%; /* largura e altura */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            position: absolute; /* use esse comando para poder alterar a posição do quadrado amarelo */
+            top:50%; /* so podemos usar essa propriedade porque usamos o codigo position: absolute */ /* codigo para mudar a posição da cor amarela */
+            left:50%;/* so podemos usar essa propriedade porque usamos o codigo position: absolute */ /* codigo para mudar a posição da cor amarela */
+            transform: translate(-50%,-50% ); /* a cor amarela vai mudar de posição em relação ao valor que voce colocar seja ele positivo ou negativo */
+
+            /* para centralizar a cor amarela usamos o codigo top,left junto com o codigo transform:translate */
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
