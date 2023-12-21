@@ -1,0 +1,61 @@
+@charset "UTF-8";
+ *{             /* (*) esse simbolo significa que as configurações servem para todos os elementos gerais */
+    margin: 0px;
+    padding: 0px;
+
+ }
+
+ html,body{ /* as alterações servem para o html eo body ao mesmo tempo */
+    min-height: 100vh ; /* o tamanho do texto vai ser de acordo com o tamanho da view port(altura) */
+    background-color: darkgray;
+ }
+ header{
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+ header h1 {
+    padding-top: 50px;
+    /* text-transform: uppercase; deixa a letra maiuscula */
+    font-variant: small-caps; /* deixa a letra maiuscula tambem */
+ }
+ header p {
+    padding-bottom: 50px ;
+
+ }
+
+ header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ header a:hover, footer a:hover{
+    text-decoration: underline;
+ }
+ section{
+    padding-top:10vh;
+    padding-bottom: 10vh ;
+    line-height: 2em; /* vai criar um espaço vazio entre cada frase */
+    padding-left:30px ; /* vai desgrudar o texto do lado esquerdo */
+ }
+ section.normal{
+    background-color: white;
+    color:black;
+ }
+ section.imagem{
+    background-color: rgb(32, 30, 30);
+    color: white;
+
+
+ }
+ section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 400px;
+
+ }
+ footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+ }
