@@ -55,20 +55,41 @@
     font-family: var(--fonte3);
     font-size: 3.5vw ; /*  vw significa largura da tela */ /* para fazer com que o texto que esta dentro de h1 aumente ou diminua de temanho em relação ao tamanho da tela usamos o vw */
  }
+ section > p{
+   padding-bottom:2em ; /* vai criar um espaço vai entre os paragrafos */
+ }
  section.normal{
     background-color: white;
     color:black;
  }
  section.imagem{
     background-color: rgb(32, 30, 30);
-    color: white;
-
+    color: white; 
+    box-shadow: inset 6px 6px 13px 0px black; /* vai criar sombra ao redor da imagem */
+    /* 6px de sombra horizontal; */
+    /* 6px de sombra vertical  */
+    /* 13px de desfoque */
+   /* 0px de propagação/espalhamento */
+   background-size: cover; /* vai fazer a imagem se adpatar em relação ao tamanho da tela,ou seja, da view port */
+   background-attachment: fixed; /* usamos esse comando para deixar as imagens com efeito Parallax simples */
 
  }
  section.imagem>p{
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.512);
     display: inline-block; /* o fundo preto onde esta os paragrafos vai ficar alinhado com os paragrafos criando uma caixa */
     padding: 20px;
+    text-shadow: 1px 1px 0px black ;
+
+ }
+ section#img01{
+   background-image: url('../imagens/background001.jpg');
+   background-position:right center ; /* a juaninha esta do lado direito então usamos esse codigo para mostra o lado direito da imagem, e centralizar a imagem*/
+   
+   
+ }
+ section#img02{
+   background-image: url('../imagens/background002.jpg');
+    
 
  }
  footer{
