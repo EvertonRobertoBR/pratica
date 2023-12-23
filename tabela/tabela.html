@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela em html</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse; /* vai alterar o espaço vazio que ficava entre cada quadradinho */
+            border: 5px solid red; /* vai criar uma borda em volta da tabela */
+            
+        }
+
+        tr.linha{
+            background-color: beige;
+            
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;   
+            text-align: center;  /* aliha as posições de maneira horizontal */                                                                                                     
+            vertical-align: middle; /* pressione ctrl + espaço e escolha a posição onde os valores que estão dentro de (td) vão ficar */ /* aliha as posições de maneira vertical */
+        }
+
+        td.cor{
+            background-color: darkgrey;
+        }
+
+        .numero{
+            vertical-align: top;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- hierarquia de tabela simples -->
+        <!-- table = tabela -->
+            <!-- table row = linha de tabela -->
+                <!-- table header = cabeçalho de tabela -->
+                    <!-- table data =  dado de tabela -->
+   <!--  vai ficar uma dentro da outra -->
+
+    <h1>tabela teste</h1>
+
+    <table> 
+        <tr class="linha"> <!-- table row, primeira linha -->
+
+            <td>A1</td> 
+            <td>B1</td> <!-- table data -->
+            <td>C1</td>
+
+        </tr>
+        
+        <tr>
+            <td>A2</td>
+            <td class="cor">B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+
+            <td class="numero">A4</td>
+            <td class="numero">B4</td>
+            <td class="numero">C4</td>
+        </tr>
+
+    </table>
+
+    <!-- so por curiosidade a tag (tr) e (td) não precisam ser fechadas -->
+    
+</body>
+</html>
