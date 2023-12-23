@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td{
+            border: 1px solid black; /* cria um quadrado em cada td */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MESCLAGEM DE CELULAS</h1>
+
+    <table>
+        
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td> <!-- colspan = 2 vai fazer com que o b ocupe 2 colunas --> <!-- deu certo porque excluimos o bloco c -->
+                
+            </tr>
+                
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td rowspan="3">F</td> <!-- rowspan=3 vai fazer o f ocupar 3 linhas --> <!-- deu certo porque excluimos os blocos g e j -->
+            </tr>
+                
+            <tr>
+                
+                <td>H</td>
+                <td>I</td>
+            </tr>
+        
+            <tr>
+                
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        
+            
+
+            
+    </table>
+
+    
+    
+</body>
+</html>
