@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            table{
+                
+                border-collapse: collapse;
+            }
+            th,td{
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .nome{
+              background-color: green;
+            }
+            col.sexo{
+                background-color: aqua;
+            }
+        </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+    <table>
+
+        <colgroup> <!-- esse codigo possibilita que agente consiga mudar a cor dos elementos de uma coluna -->
+            <col class="nome" >
+            <col class="sexo" span="2n"> <!-- a cor azul vai ser expandir para a proxima coluna devido o codigo span=2n -->
+            <col class="idade">
+            <col class="prof" >
+        </colgroup>
+
+        <caption>CADASTRO</caption>
+        <tr>
+            <th>nome</th>
+            <th>sexo</th>
+            <th>idade</th>
+            <th>profissão</th>
+            
+        </tr>
+
+        <tr>
+            <td>ana maria</td>
+            <td>f</td>
+            <td>25</td>
+            <td>josnalista</td>
+        </tr>
+
+        <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>45</td>
+            <td>pedreiro</td>
+        </tr>
+
+        <tr>
+            <td>gustavo</td>
+            <td>m</td>
+            <td>45</td>
+            <td>mercador</td>
+        </tr>
+
+        <tr>
+            <td>julia</td>
+            <td>f</td>
+            <td>45</td>
+            <td>percadora</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
