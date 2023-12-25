@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe#coco{
+            width: 95vw;
+            border: 1px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime blanditiis quia. Ratione cum repellat adipisci laborum eveniet, vel aut voluptates recusandae, veritatis inventore rerum eos cumque architecto quam corporis.</p>
+    <ul>
+        <li><a href="pagina-interna.html" target="biscoito">primeira pagina</a></li> <!-- devemos colocar o nome que estabelecemos para (name), para o link carregar dentro do iframe -->
+        <li><a href="pagina-interna2.html" target="biscoito">segunda pagina</a></li> <!-- devemos colocar o nome que estabelecemos para (name), para o link carregar dentro do iframe-->
+        <li><a href="pagina-interna3.html" target="biscoito">terceira pagina</a></li>  <!-- devemos colocar o nome que estabelecemos para (name), para o link carregar dentro do iframe -->
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem, magnam suscipit iure accusamus accusantium eaque ducimus quae aperiam sunt, quaerat quisquam! Voluptate nobis totam magnam, dolorum commodi quae iste!</p>
+
+    <iframe id="coco" name="biscoito" src="" frameborder="2"></iframe> <!-- para carregar a 'pagina-interna' dentro do iframe precisamos colocar esse (name) -->
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque officia adipisci vitae dolore esse obcaecati in ab minima. Sed iure praesentium suscipit harum ut nostrum fuga adipisci. Laudantium, nostrum recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi perspiciatis repellendus doloribus. Maiores accusantium doloremque in, velit totam doloribus? Illo reiciendis ipsam id laudantium itaque, a odit eligendi distinctio!</p>
+    
+</body>
+</html>
