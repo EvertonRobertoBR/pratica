@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on"> <!-- pesquise sobre a tag autocomplete dentro da tag form -->
+
+    <!-- pesquise sobre a tag autocomplete dentro da tag input -->
+    
+        <p>
+            <label for="usuario2">usuario</label>
+            <input type="text" name="usuario1" id="usuario2" required size="30" placeholder="nome do usuario" autocomplete="username"> <!-- a tag required nao vai permitir enviar os dados ate que o usuario preencha todos os campos -->
+            <!-- a tag size aumente o tamanho do input text -->
+            <!-- placeholder server para digitar texto com o objetivo de das dicas a o usuario -->
+
+            <!-- pelo que eu entendi autocomplete ele vai sugerir senhas,nomes etc.. para preencher campos que voce preencheu anteriormente, para isso acontecer voce deve ativar o autocomplete=on no form e colocar autocomplete dentro do input-->
+            
+        </p>
+
+        <p>
+            <label for="senha1">senha</label>
+            <input type="password" name="senha" id="senha1"required minlength="8" size="30" placeholder="crie uma senha"> <!-- a tag required nao vai enviar os dados ate que o usuario preencha todos os campos -->
+            <!-- a tag minlength estabelece o minimo de caracteres que o usuario deve digitar no caso 8 caracteres eo minimo -->
+            <!-- a tag size aumente o tamanho do input text -->
+            <!-- placeholder server para digitar texto com o objetivo de das dicas a o usuario -->
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>

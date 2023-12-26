@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    
+</head>
+<body>
+    <h1>forumulario</h1>
+    <form action="cadastro.php" method="post"> <!-- form é a tag que nos permite criar um formulario --> <!-- action vai guardar os dados digitados pelo usuario -->
+        <p><label for="inome">nome: </label> <!-- dentro do for voce coloca sua id ou name -->
+            <input type="text" name="nome" id="inome"></p> <!-- input text cria uma caixa vazia para o usuario inserir seus dados -->
+        <p><label for="isobrenome">sobre nome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p> <!-- cria um botão com o nome que voce colocar -->
+    </form>
+
+   <!--  name e mais ultil para html e php -->
+   <!-- id e mais ulti para javascript e label -->
+  <!--  label server para criar uma relação entre sua caixa input text com o paragrafo(p),ou seja, ele vai criar um relação entre os input text e os pararafos ao lado.
+   nome -> input text (caixa vazia para o usuario inserir seus dados)
+   sobrenome -> input text (caixa vazia para o usuario inserir seus dados) -->
+
+   <!-- a tag method=post, nao vai mostra as informações digitadas pelo o usuario na url. usamos esse metodo quando as informações forem delicadas como senhas de cartões-->
+    <!-- a tag method=get, vai mostra as informações digitadas pelo o usuario na url. usamos esse metodo quando as informações nao são sensiveis-->
+
+   
+ 
+
+    
+</body>
+</html>
