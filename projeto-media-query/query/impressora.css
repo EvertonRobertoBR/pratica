@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* estilo para impressora */   
+/* para voce ver o css(impressora) click com  o botão direito do mouse na pagina e selecione imprimir */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content:'esse artico foi impresso por joão banana';
+}
+
+article{
+    width: 100%;
+    
+}
+
