@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">estado</label>
+            <select name="est" id="iest"> <!-- a tag select cria a opção de voce selecionar algo -->
+
+                <!-- a tag option vai criar opções para selecionar dentro de select -->
+
+                <optgroup label="região sudeste"> <!-- optroup vai pegar as opções e colocar dentro de um grupo. o label ta sendo usado  para nomear o nosso optgroup -->
+                    <option value="rj">rio de janeiro</option>
+                    <option value="sp">são paulo</option>
+                    <option value="mg">minas gerais</option>
+                </optgroup>
+
+                <optgroup label="região nordeste">
+                    <option value="rj">rio de janeiro</option>
+                    <option value="sp">são paulo</option>
+                    <option value="mg">minas gerais</option>
+                </optgroup>
+
+            </select>
+
+            <p>
+                <label for="iprof">profissão</label>
+                <input type="text" name="prof" id="iprof" list="prof">;<!-- voce tem que criar a tag list dentro do input e colocar o id que voce criou no datalist para que as opções possam aparecer -->
+
+                <datalist id="prof"> <!-- cria a caixa com a profissões -->
+
+                <option value="adm">administrador</option> <!-- option significa opções -->
+                <option value="cont">contador</option>
+                <option value="prof">professor</option>
+
+
+                </datalist>
+                
+            </p>
+        </p>
+
+        <p>
+            <label for="imsg"></label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea><!-- vai criar um quadrado para digitar coisas -->
+        </p>
+
+        <p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+
+        </p>
+
+
+    </form>
+
+    
+</body>
+</html>
