@@ -68,7 +68,9 @@ header{
     min-height: 150px; /* altura minima */
     text-align: center;
     padding-top: 30px; /* vai expandir a parte de cima da cor de fundo (verde) */
-    background-image: linear-gradient(to Bottom ,#034159,#025951,#02735E,#038C3E,#0CF25D)
+    background-image: linear-gradient(to Bottom ,#034159,#025951,#02735E,#038C3E,#0CF25D);
+    
+    
     
     
 }
