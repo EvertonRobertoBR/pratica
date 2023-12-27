@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="dados.php" method="get" autocomplete="on">
+
+        <fieldset> <!-- cria um caixa -->
+            <legend>sexo</legend>
+
+            <input type="radio" name="sexo" id="imasculino" value="M"> <label for="imasculino">masculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifeminino" value="F"><label for="ifeminino">feminino</label>
+
+            <!-- quando marcamos a opção masculino ou feminino, nao tinhamos a opção de desmarca, para conseguir colocar essa opção de desmarca , voce deve dar o mesmo (name) para seus input e relacionamos com o label para criar um vinculo. -->
+
+            <!-- ou seja toda vez que voce usar o input radio voce deve colocar seus input com o mesmo name -->
+
+            <!-- nao precisa usar isso na checkbox -->
+
+        </fieldset>
+
+        <fieldset>
+                <legend>esportes favoritos</legend>
+                <input type="checkbox" name="esporte" id="iesport"> <label for="iesport">futebol</label> <br>
+                <input type="checkbox" name="natação" id="inatação"><label for="inatação">natação</label> <br>
+                <input type="checkbox" name="corrida" id="icorrida"><label for="icorrida">corrida</label> <br>
+                <input type="checkbox" name="surfer" id="isurfer"><label for="isurfer">surfer</label> <br>
+                <input type="checkbox" name="baisebol" id="ibaisebol"><label for="ibaisebol">baisolboll bad</label> <br>
+                <input type="checkbox" name="muscle" id="imuscle"> <label for="imuscle">muscle</label> <br>
+                <input type="checkbox" name="boribilder" id="iboribilder"> <label for="iboribilder">boribilder</label> <br>
+
+                <!-- checkbox cria caixinhas de marcar -->
+
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
