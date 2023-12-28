@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* aparelho deitado (landscape) */
+
+body {
+    background-image: url(../cev-landscape.jpg);
+    background-position: left bottom;
+    background-color: yellow;
+
+    /* quando a view port,ou seja, o tamanho da tela ficar no modo paisagem (horizontal) a cor de fundo vai ficar yellow(amarelo  ) */
+
+    /* se voce quiser nao tem problema tirar o background-color */
+
+}
