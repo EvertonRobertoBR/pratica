@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block; /* precisamos desse codigo para o menu nao sumir quando a view port estiver a cima de 768 */
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    main {
+        width: 768px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/> <!-- esse codigo foi pegado do google icon, ele nos permite usar o icone de menu -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()"> <!-- quando eu mudar o tamanho do site -->
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!-- usamos a tag (i) para poder inserir icones, no caso vamos inserir o icone de menu -->
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Olha</a></li>
+                <li><a href="#">Que</a></li>
+                <li><a href="#">Site</a></li>
+                <li><a href="#">Lindo</a></li>
+                <li><a href="#">Nossa</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11
+            Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11</p>
+
+            <p>Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11
+            Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11</p>
+
+            <p>Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11
+            Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11</p>
+
+            <p>Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11
+            Porque sou eu que conheço os planos que tenho para vocês", diz o Senhor, "planos de fazê-los prosperar e não de lhes causar dano, planos de dar-lhes esperança e um futuro. Jeremias 29:11</p>
+
+        </article>
+    </main>
+    <script>
+        function clickMenu() { /* esse codigo nos permite abrir e fechar o menu */
+            if (itens.style.display == 'block') {  /* == sinal de igual */
+                itens.style.display = 'none'        /* = sinal de recebe */
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() { /* esse codigo deve ser usado em conjunto com a junction clickmenu */
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
